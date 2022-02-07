@@ -1,0 +1,233 @@
+<?php
+
+return [
+    'table_name' => 'cigar',
+
+    'drop_scheme' => "SET FOREIGN_KEY_CHECKS = 0; DROP TABLE IF EXISTS `cigar`; SET FOREIGN_KEY_CHECKS = 1",
+
+    'scheme' => "CREATE TABLE IF NOT EXISTS `cigar` (
+        `id` int(11) NOT NULL AUTO_INCREMENT,
+        `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+        `image` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+        `category` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+        `Subcategory` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+        `description` TEXT,
+        `price` decimal(6,2),
+        `stock` int(11),
+        `created_at` timestamp NOT NULL,
+        `updated_at` timestamp DEFAULT CURRENT_TIMESTAMP,
+        `deleted_at` timestamp DEFAULT NULL,
+        `created_by` int(11) NOT NULL,
+        `updated_by` int(11),
+        `deleted_by` int(11),
+        PRIMARY KEY (`id`)
+      ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;",
+
+    'relations' => [
+        'ALTER TABLE `cigar` ADD FOREIGN KEY (`created_by`) REFERENCES `users`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT;',
+        'ALTER TABLE `cigar` ADD FOREIGN KEY (`updated_by`) REFERENCES `users`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT;',
+        'ALTER TABLE `cigar` ADD FOREIGN KEY (`deleted_by`) REFERENCES `users`(`id`) ON DELETE RESTRICT ON UPDATE RESTRICT;',
+    ],
+
+    'seeder' => [
+        'type' => 'array',
+        'data' => array(
+            
+            [
+                'id'            => 15,
+                'name'          => 'legends Cigar',
+                'image'         => 'merk1.jpeg',
+                'category'      => 'cigar',
+                'Subcategory'   => 'cigar',
+                'description'   => 'lorem',
+                'price'         => 22.95,
+                'stock'         => 20,
+                'created_at'    => date('Y-m-d H:i:s'),
+                'created_by'    => 2,
+            ],
+
+            [
+                'id'            => 16,
+                'name'          => 'POR Larranaga',
+                'image'         => 'merk2.png',
+                'category'      => 'cigar',
+                'Subcategory'   => 'cigar',
+                'description'   => 'lorem',
+                'price'         => 24.95,
+                'stock'         => 20,
+                'created_at'    => date('Y-m-d H:i:s'),
+                'created_by'    => 2,
+            ],
+
+            [
+                'id'            => 17,
+                'name'          => 'Mail cuban Cigars',
+                'image'         => 'merk3.jpeg',
+                'category'      => 'cigar',
+                'Subcategory'   => 'cigar',
+                'description'   => 'lorem',
+                'price'         => 34.95,
+                'stock'         => 20,
+                'created_at'    => date('Y-m-d H:i:s'),
+                'created_by'    => 2,
+            ],
+
+            [
+                'id'            => 18,
+                'name'          => 'Esto Warenhouse',
+                'image'         => 'merk5.jpeg',
+                'category'      => 'cigar',
+                'Subcategory'   => 'cigar',
+                'description'   => 'lorem',
+                'price'         => 24.95,
+                'stock'         => 20,
+                'created_at'    => date('Y-m-d H:i:s'),
+                'created_by'    => 2,
+            ],
+
+            [
+                'id'            => 19,
+                'name'          => 'Cigar City Brewing',
+                'image'         => 'merk6.jpeg',
+                'category'      => 'cigar',
+                'Subcategory'   => 'cigar',
+                'description'   => 'lorem',
+                'price'         => 24.95,
+                'stock'         => 20,
+                'created_at'    => date('Y-m-d H:i:s'),
+                'created_by'    => 2,
+            ],
+
+            [
+                'id'            => 20,
+                'name'          => 'Corona Cigar Co.',
+                'image'         => 'merk9.png',
+                'category'      => 'cigar',
+                'Subcategory'   => 'cigar',
+                'description'   => 'lorem',
+                'price'         => 24.95,
+                'stock'         => 20,
+                'created_at'    => date('Y-m-d H:i:s'),
+                'created_by'    => 2,
+            ],
+
+            [
+                'id'            => 21,
+                'name'          => 'Dontoirac Cigars',
+                'image'         => 'merk10.png',
+                'category'      => 'cigar',
+                'Subcategory'   => 'cigar',
+                'description'   => 'lorem',
+                'price'         => 24.95,
+                'stock'         => 20,
+                'created_at'    => date('Y-m-d H:i:s'),
+                'created_by'    => 2,
+            ],
+
+            [
+                'id'            => 22,
+                'name'          => 'TIT Trinidad',
+                'image'         => 'merk11.png',
+                'category'      => 'cigar',
+                'Subcategory'   => 'cigar',
+                'description'   => 'lorem',
+                'price'         => 24.95,
+                'stock'         => 20,
+                'created_at'    => date('Y-m-d H:i:s'),
+                'created_by'    => 2,
+            ],
+
+            [
+                'id'            => 23,
+                'name'          => 'Cuban Cigar Victoria',
+                'image'         => 'merk12.jpeg',
+                'category'      => 'cigar',
+                'Subcategory'   => 'cigar',
+                'description'   => 'lorem',
+                'price'         => 34.95,
+                'stock'         => 20,
+                'created_at'    => date('Y-m-d H:i:s'),
+                'created_by'    => 2,
+            ],
+
+            [
+                'id'            => 24,
+                'name'          => 'Hoyo de Monterrey Habana',
+                'image'         => 'merk13.jpeg',
+                'category'      => 'cigar',
+                'Subcategory'   => 'cigar',
+                'description'   => 'lorem',
+                'price'         => 25.95,
+                'stock'         => 20,
+                'created_at'    => date('Y-m-d H:i:s'),
+                'created_by'    => 2,
+            ],
+
+            [
+                'id'            => 25,
+                'name'          => 'Cuban Cigar',
+                'image'         => 'merk14.png',
+                'category'      => 'cigar',
+                'Subcategory'   => 'cigar',
+                'description'   => 'lorem',
+                'price'         => 22.95,
+                'stock'         => 20,
+                'created_at'    => date('Y-m-d H:i:s'),
+                'created_by'    => 2,
+            ],
+
+            [
+                'id'            => 26,
+                'name'          => 'Arturo Fuente',
+                'image'         => 'merk15.jpeg',
+                'category'      => 'cigar',
+                'Subcategory'   => 'cigar',
+                'description'   => 'lorem',
+                'price'         => 24.95,
+                'stock'         => 20,
+                'created_at'    => date('Y-m-d H:i:s'),
+                'created_by'    => 2,
+            ],
+
+            [
+                'id'            => 27,
+                'name'          => 'Hazelnoot Cigar',
+                'image'         => 'merk20.jpg',
+                'category'      => 'cigar',
+                'Subcategory'   => 'cigar',
+                'description'   => 'lorem',
+                'price'         => 19.95,
+                'stock'         => 20,
+                'created_at'    => date('Y-m-d H:i:s'),
+                'created_by'    => 2,
+            ],
+
+            [
+                'id'            => 28,
+                'name'          => 'la place',
+                'image'         => 'merk21.jpeg',
+                'category'      => 'cigar',
+                'Subcategory'   => 'cigar',
+                'description'   => 'lorem',
+                'price'         => 11.95,
+                'stock'         => 20,
+                'created_at'    => date('Y-m-d H:i:s'),
+                'created_by'    => 2,
+            ],
+
+            [
+                'id'            => 29,
+                'name'          => 'Jumbo Cigar',
+                'image'         => 'merk22.jpeg',
+                'category'      => 'cigar',
+                'Subcategory'   => 'cigar',
+                'description'   => 'lorem',
+                'price'         => 24.95,
+                'stock'         => 20,
+                'created_at'    => date('Y-m-d H:i:s'),
+                'created_by'    => 2,
+            ],
+            
+        ),
+    ]
+];

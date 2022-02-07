@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+
+
+:root{
+  --brown: #BC9476;
+  --brightred: #f9423d;
+  --white: #fff;
+  --black: #030000cc;
+}
+ #carousel {
+    position: relative;
+    margin: auto;
+   }
+  
+   #carouselImage{
+    width: 10%;
+    height: 10%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+   
+    
+   }
+  
+   .carousel-indicators li {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--brown)
+    box-shadow: inset 1px 1px 1px 1px var(--brown);    
+  }
+  
+  .carousel-indicators .active {
+    width: 10x;
+    height: 10px;
+    margin: 5px;
+  } 
+  
+  .carousel-inner > .item {
+    position: relative;
+    display: none;
+    -webkit-transition: 0.6s ease-in-out left;
+    -moz-transition: 0.6s ease-in-out left;
+    -o-transition: 0.6s ease-in-out left;
+    transition: 0.6s ease-in-out left;
+  } 
+  
+  #carouselText {
+    color: var(--white);
+  }

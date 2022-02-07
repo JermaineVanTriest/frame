@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.header {
+    height: 200px;
+    background-color: #9eafb7;
+    width: 100%;
+    color: white;
+}
+
+.content {
+    position: relative;
+    min-height: 100vh;
+}
+
+
+.footer {
+    height: 200px;
+    background-color: black;
+    width: 100%;
+    color: white;
+}
+
+.cart-icon {
+    cursor: pointer;
+}
+
+
+
+a:link,
+a:active,
+a:visited {
+    color: #000000;
+}
+
+.error-message {
+    color: white;
+}
+
+.profile-options {
+    background-color: rgba(21, 19, 19, 0.7);
+    padding: 20px;
+    color: white;
+    border-right: 1px solid rgb(70, 11, 70);
+    width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+    .profile-options {
+        width: 250px;
+        height: 100vh;
+    }
+    .profile-options-inner {
+        margin-top: 50px;
+    }
+}
+
+.profile-section ul {
+    padding: 0;
+}
+
+.profile-section li {
+    list-style-type: none;
+    font-size: 1.1em;
+    height: 30px;
+    padding-left: 20px;
+    line-height: 30px;
+}
+
+.profile-section li a {
+    display: block;
+}
+
+.profile-section li a:hover {
+    text-decoration: none;
+}
+
+.profile-section li:hover {
+    background-color: darkmagenta;
+    opacity: 0.8;
+    border-radius: .3em;
+    cursor: pointer;
+}
+

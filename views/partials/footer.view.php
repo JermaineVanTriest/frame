@@ -1,0 +1,1 @@
+<foot-footer></foot-footer>

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+
+
+:root{
+  --brown: #BC9476;
+  --brightred: #f9423d;
+  --white: #fff;
+  --black: #030000cc;
+}
+
+.btn {
+    background-color: var(--brown);
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    position: relative;
+    
+  }
+  
+  .btn:hover{
+    color: black;
+    background-color: var(--brown);
+  
+  }
+  .btn:active {
+    box-shadow: none;
+  }
+  
+  .btn > .fa-angle-right {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: right 0.5s;
+  }
+  
+  .btn:hover .fa-angle-right {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 20px;
+  }
+  
+  .btn i {
+    margin: 0 5px;
+  } 
