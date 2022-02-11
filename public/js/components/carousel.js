@@ -13,21 +13,21 @@ Vue.component("new-carousel", {
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
-                <img src="/public/images/webshop/aaa3.jpg" class="d-block w-100" alt="...">
+                <img src="/public/images/c.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5 id="carouselText">First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
                 </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                <img src="/public/images/webshop/aaa2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-item" data-bs-interval="10000">
+                <img src="/public/images/c2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Second slide label</h5>
                     <p>Some representative placeholder content for the second slide.</p>
                 </div>
                 </div>
                 <div class="carousel-item">
-                <img src="/public/images/webshop/aaa1.jpg" class="d-block w-100" alt="...">
+                <img src="/public/images/c3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Third slide label</h5>
                     <p>Some representative placeholder content for the third slide.</p>

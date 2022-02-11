@@ -7,7 +7,7 @@
     <question-link></question-link>
 
     <div class="container">
-        <products></products>
+        <product></product>
     </div>
 
 

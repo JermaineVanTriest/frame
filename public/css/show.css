@@ -19,11 +19,13 @@ html {
     background-image: url(/public/images/webshop/background.png);
 }
     
-.user_card {
-    height: 500px;
+.Show-card {
+    height: 400px;
     width: 400px;
     margin-top: 5.5rem;
     margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
     background: var(--brown);
     position: relative;
     display: flex;
@@ -39,6 +41,8 @@ html {
 
 .brand_logo_container {
     position: absolute;
+    margin-left: 5.5rem;
+    margin-right: 1.5rem;
     height: 170px;
     width: 170px;
     top: -75px;
@@ -58,48 +62,46 @@ html {
 .form_container {
     margin-top: 100px;
 }
-    
-.login_btn {
-    width: 100%;
-    background: var(--black) !important;
-    color: white !important;
-}
-    
-.login_btn:focus {
-    box-shadow: none !important;
-    outline: 0px !important;
-}
 
-.login_container {
-    padding: 0 2rem;
-}
-    
-.input-group-text {
-    background: var(--white) !important;
-    color: var(--brown) !important;
-    border-radius: 2rem 2rem 2rem 2rem !important;
-}
-    
-.input_user,
-.input_pass:focus {
-    box-shadow: none !important;
-    outline: 0px !important;
-}
-
-#NoAcount a{
+#show{
     color: var(--white);
 }
 
-#NoAcount a:hover{
+.container .row{
+    color: var(--white);
+    margin-left: 5.5rem;
+    margin-right: 1.5rem;
+}
+
+#btn-show{
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-right: auto;
+}
+
+#danger{
+    background-color: var(--brightred);
+}
+
+#nav-admin{
+    margin-top: 1rem;
+    color: var(--white);
+    font-size: 25px;
+    text-decoration: none;
+}
+
+#nav-admin a{
+    margin-top: 0.50rem;
+    color: var(--white);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+#nav-admin a:hover{
     color: var(--black);
 }
-
-.login-overlay a{
-    
-}
-
-.login-overlay a:hover{
+#fullName{
+    color: var(--black);
+    font-size: 20px;
     text-decoration: none;
-    color: var(--white);
 }
-

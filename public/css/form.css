@@ -13,17 +13,20 @@
 	
 body,
 html {
+    font-family: 'Merriweather', serif;
     margin: auto;
     padding: auto;
     height: 100%;
     background-image: url(/public/images/webshop/background.png);
 }
     
-.user_card {
+.edit-card {
     height: 500px;
     width: 400px;
     margin-top: 5.5rem;
     margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
     background: var(--brown);
     position: relative;
     display: flex;
@@ -37,7 +40,7 @@ html {
 
 }
 
-.brand_logo_container {
+ .brand_logo_container {
     position: absolute;
     height: 170px;
     width: 170px;
@@ -53,19 +56,31 @@ html {
     width: 150px;
     border-radius: 50%;
     border: 3px solid var(--brown);
-}
+} 
     
 .form_container {
     margin-top: 100px;
 }
     
-.login_btn {
-    width: 100%;
-    background: var(--black) !important;
+#submit {
+    width: 90px;
+    height: 50px;
+    background: var(--brown) !important;
     color: white !important;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    position: relative;
 }
-    
-.login_btn:focus {
+#submit:hover{
+    color: black;
+    background-color: var(--brown);
+}
+
+#submit:focus {
     box-shadow: none !important;
     outline: 0px !important;
 }
@@ -74,28 +89,30 @@ html {
     padding: 0 2rem;
 }
     
-.input-group-text {
+#edit1{
+    font-family:
     background: var(--white) !important;
-    color: var(--brown) !important;
-    border-radius: 2rem 2rem 2rem 2rem !important;
+    color: var(--black)!important;
+    border-radius: 2rem 2rem  2rem  2rem !important;
+    border-radius: 4px;
+    margin: 1.5px;
+    padding: 0.5rem;
 }
+
+#edit1 option{
+    background-color: var(--brown);
+    color: var(--white);
+    margin: 1.5px;
     
-.input_user,
-.input_pass:focus {
+
+}
+#edit1:focus {
     box-shadow: none !important;
     outline: 0px !important;
 }
 
-#NoAcount a{
-    color: var(--white);
-}
-
-#NoAcount a:hover{
-    color: var(--black);
-}
-
 .login-overlay a{
-    
+    text-decoration: none;
 }
 
 .login-overlay a:hover{
