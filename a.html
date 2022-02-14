@@ -1,27 +1,32 @@
-<link rel="stylesheet" href="/public/css/products.css">
+<div id="cart-title" class="row mt-3 mb-3 fw-bold">
+    <div class="col-md-2"></div>                   
+    <div class="col-md-3">Naam</div>
+    <div class="col-md-2">Aantal</div>
+    <div class="col-md-2">Prijs</div>
+    <div class="col-md-3">Totaal Prijs</div>
+</div>
 
-<script src="/public/js/components/intern2.js"></script>
+<div id="cart-items" class="row mb-3" v-for="item in cart.items"><hr />
+    <div class="img" class="col-md-2 "><img class='border_image_cart' :src="'/public/images/webshop/' + item.image" width="100%"></div>                   
+    <div class="col-md-3">{{ item.name }}</div>
+    <div class="col-md-2">{{ item.amount }}</div>
+    <div class="col-md-2"> € {{ item.price }}</div>
+    <div class="col-md-3"> € {{ item.totalPrice }}</div>
+    <input class="btn btn-primary" type="reset" value="Reset">
+    
+</div>
 
-                'category'      => 'accessories',
-                'Subcategory'   => 'humidor',
+<div class="row mt-3"><hr />
+    <div class="col-md-2"></div>
+    <div class="col-md-3 fw-bold">Total</div>
+    <div class="col-md-2">{{ cart.totalItems }}</div>
+    <div class="col-md-2"></div>
+    <div class="col-md-3"> € {{ cart.totalPrice }}</div>
+</div>
 
-                'category'      => 'bestSales',
-                'Subcategory'   => 'cigaar',
-
-                'category'      => 'bestSales',
-                'Subcategory'   => 'lighter',
-
-                'category'      => 'bestSales',
-                'Subcategory'   => 'lighter',
-
-                'category'      => 'bestSales',
-                'Subcategory'   => 'ashtray',
-
-                'category'      => 'bestSale',
-                'Subcategory'   => 'carafe',
-
-                <img src="/public/images/rooklogo.jpeg" class="d-block w-100" alt="...">
-
-
-                <?php require 'views/admin/partials/header.view.php' ?>
-                <img src="/views/admin/partials/header.view.php" alt="">
+<div id="cart-btn" class="row cart-footer justify-content-center">
+    <a href="/home" class="col-md-5 btn btn_verder_winkelen mt-3 fs-3"><i class="fs-3 fa fa-arrow-left"></i>Verder winkelen</a>
+    <a href="/checkout" class="col-md-3 btn mt-3 fs-3">Afrekenen</a>
+</div>
+</div>
+</div>
