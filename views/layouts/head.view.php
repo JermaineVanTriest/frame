@@ -30,7 +30,6 @@
 
     <!-- <link rel="stylesheet" href="/public/css/main.css" /> -->
     <link rel="stylesheet" href="/public/css/cart.css" /> 
-
     <link rel="stylesheet" href="/public/css/navbar.css">
     <link rel="stylesheet" href="/public/css/btn.css">
     <link rel="stylesheet" href="/public/css/products.css">
