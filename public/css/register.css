@@ -19,9 +19,9 @@ html {
     background-image: url(/public/images/webshop/background.png);
 }
     
-.user_card {
-    height: 500px;
-    width: 400px;
+.register_card {
+    height: 650px;
+    width: 750px;
     margin-top: 5.5rem;
     margin-bottom: 1.5rem;
     background: var(--brown);
@@ -77,7 +77,7 @@ html {
 .input-group-text {
     background: var(--white) !important;
     color: var(--brown) !important;
-    border-radius: 2rem 2rem 2rem 2rem !important;
+    border-radius: 2rem 0 0 2rem !important;
 }
     
 .input_user,
@@ -86,16 +86,8 @@ html {
     outline: 0px !important;
 }
 
-#NoAcount a{
-    color: var(--white);
-}
-
-#NoAcount a:hover{
-    color: var(--black);
-}
-
 .login-overlay a{
-    
+    text-decoration: none;
 }
 
 .login-overlay a:hover{
@@ -103,3 +95,6 @@ html {
     color: var(--white);
 }
 
+#register-message{
+    display: none;
+}

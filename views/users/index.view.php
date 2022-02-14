@@ -1,4 +1,5 @@
-<?php require 'views/partials/header.view.php' ?>
+<?php require 'views/admin/partials/header.view.php' ?>
+
     <section class="container">
         <ul>
             <?php foreach($users as $user) : ?>

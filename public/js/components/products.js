@@ -1,4 +1,4 @@
-Vue.component('products', {
+Vue.component('product', {
     data: function () {
         return {
             products: [],
@@ -35,17 +35,17 @@ Vue.component('products', {
     },
 
     template: `
-        <div class="row">
-            <div class="col-md-4 pt-3" v-for="product in products">
-                <div class="card">
-                    <img :src="'/public/images/webshop/' + product.image" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ product.name }}</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <p>Stock: {{ product.stock }}</p>
-                        <input type="button" class="btn btn-primary" :disabled="product.stock === 0" @click="addToCart(product)" value="Order">
-                    </div>
-                </div>
+    <div class="row">
+    <div class="col-md-4 pt-3" v-for="product in products">
+        <div class="card">
+            <img :src="'/public/images/webshop/' + product.image" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 id="card-body" class="card-title">{{ product.name }}</h5>
+                <p id="card-body" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p id="card-body">Prijs:&#x20AC; {{ product.price }}</p>
+                <input type="button" class="btn btn-primary" :disabled="product.stock === 0" @click="addToCart(product)" value="Order">
             </div>
-        </div>`,
+        </div>
+    </div>
+</div>`,
 })

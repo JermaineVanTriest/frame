@@ -23,7 +23,7 @@ Vue.component('cigars', {
         // Get all cigars calling function in controller (Ajax call)
         axios({
             method: 'GET',
-            url: 'home/cigars',
+            url: 'cigar',
             headers: {
                 "X-Requested-With": "XMLHttpRequest"
             }
