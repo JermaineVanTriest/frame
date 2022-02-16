@@ -96,6 +96,5 @@
 }
 
 #CloseCart{
-    opacity: 0.5 !important;
     color: var(--black);
 }
