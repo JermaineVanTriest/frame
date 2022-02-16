@@ -6,9 +6,7 @@
 
 
 <div class="container">
-        <product> <a href="/products/<?= $product->id ?>">
-               More info
-            </a></product>
+        <product></product>
     </div>
 
 
