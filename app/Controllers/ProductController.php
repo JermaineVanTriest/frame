@@ -8,6 +8,16 @@ use App\Models\ProductModel;
 
 class ProductController extends Controller
 {
+    public function index()
+    {
+        $products = ProductModel::load()->all();
+
+
+        return View::render('products/index.view', [
+            'products'  => $products,
+        ]);
+    }
+
     public function create()
     {
         
@@ -43,6 +53,16 @@ class ProductController extends Controller
 
     public function show()
     {
+        $productId = Helper::getIdFromUrl('products');
         
+        $product = ProductModel::load()->get((int)$productId);
+        
+        return View::render('products/show.view', [
+            'name'          =>  $product -> name, 
+            'image'         =>  '/public/images/webshop/' . $product -> image , 
+            'description'   =>  $product -> description, 
+            'price'         =>  $product -> price, 
+            'stock'         =>  $product -> stock, 
+        ]);
     }
 }

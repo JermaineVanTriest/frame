@@ -20,9 +20,6 @@ $router->get('login', 'App/Controllers/LoginController.php@index', 'login');
 $router->get('logout', 'App/Controllers/LoginController.php@logout', 'logout');
 $router->post('login/auth', 'App/Controllers/LoginController.php@login', 'auth');
 
-$router->get('cigar', 'App/Controllers/CigarController.php@index', 'cigaar');
-
-
 $router->get('me', 'App/Controllers/ProfileController.php@index', 'me');
 
 $router->get('contact', 'App/Controllers/ContactController.php@index', 'contact');

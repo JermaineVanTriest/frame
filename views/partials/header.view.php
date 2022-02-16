@@ -19,7 +19,7 @@
                                
                      <ul class="nav-menu">
                         <li><a href="/home" class="nav-link nav-links-btn">Home</a></li>
-                        <li><a href="/cigar" class="nav-link nav-links-btn">Sigaren</a></li>
+                        <li><a href="/products" class="nav-link nav-links-btn">Sigaren</a></li>
                         <li><a href="/?page=karaf" class="nav-link nav-links-btn">Karaf</a></li>
                         <li><a href="/?page=accessory" class="nav-link nav-links-btn">Accessories</a></li>
                         <li><a href="/login" class="nav-link nav-links-btn">Inloggen</a></li>

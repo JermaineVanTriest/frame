@@ -87,7 +87,7 @@
     margin-left: -60px !important;
     margin-right: -60px !important;
 }
-#cart-btn .col-md-3{
+#cart-btn {
     font-size: 19px !important;
     height: 45px;
     width: auto;
@@ -95,3 +95,7 @@
     padding: 1px !important;
 }
 
+#CloseCart{
+    opacity: 0.5 !important;
+    color: var(--black);
+}

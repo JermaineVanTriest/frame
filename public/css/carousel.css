@@ -10,47 +10,100 @@
   --white: #fff;
   --black: #030000cc;
 }
- #carousel {
-    position: relative;
-    margin: auto;
-   }
+.product {
+  display: flex;
+  justify-content: center;
+}
+
+.img_detail {
+  width: 85%;
+  margin: 12px;
+}
+
+.product-image {
+  flex-basis: 700px;
+}
+
+.product-info {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  margin-top: 10px;
+  flex-basis: 288px;
+}
+
+.color-box {
+  width: 100%;
+  height: auto;
+  margin-top: 5px;
+  margin-bottom: 21px;
+}
+
+.detail_background {
+    background-color: var(--white);
+    
+}
+
+.detail_background_display {
+    background-color: var(--white);
+    opacity: 0.5; 
+    
+}
+
+.detail_background_info {
+  background-color: var(--white);
   
-   #carouselImage{
-    width: 10%;
-    height: 10%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-   }
-  
-   .carousel-indicators li {
-    display: inline-block;
-    width: 48px;
-    height: 48px;
-    margin: 10px;
-    text-indent: 0;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    background-color: var(--brown)
-    box-shadow: inset 1px 1px 1px 1px var(--brown);    
-  }
-  
-  .carousel-indicators .active {
-    width: 10x;
-    height: 10px;
-    margin: 5px;
-  } 
-  
-  .carousel-inner > .item {
-    position: relative;
-    display: none;
-    -webkit-transition: 0.6s ease-in-out left;
-    -moz-transition: 0.6s ease-in-out left;
-    -o-transition: 0.6s ease-in-out left;
-    transition: 0.6s ease-in-out left;
-  } 
-  
-  #carouselText {
-    color: var(--white);
-  }
+}
+
+.card_detail {
+    display: flex;
+    justify-content: center; 
+}
+
+/* third container */
+.img_carousel {
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 5em;
+    padding-top: 5em ;
+}
+
+.carousel-indicators [data-bs-target]{
+  background-color: var(--white);
+}
+
+.carousel-indicators{
+  bottom: 4rem;
+}
+
+.carousel-indicators [data-bs-target]:hover{
+  background-color: var(--brown);
+}
+.carousel-control-prev-icon{
+ color: var(--black) !important;
+}
+
+.carousel-control-next-icon{
+  back: var(--black) !important;
+ }
+ .display-1{
+   color: var(--black);
+   font-size: 30px;
+   padding-left: auto !important;
+   margin-right: auto !important;
+   margin-bottom: -3rem;
+   margin-top: 1rem;
+ }
+
+ h5{
+  color: var(--black);
+ }
+
+ .carousel-text{
+  color: var(--black);
+ }
+
+ .carousel-caption{
+   bottom:5rem;
+
+ }
